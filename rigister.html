@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="fonts/material-icon/css/material-design-iconic-font.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="main-conteiner">
+           <section class="register" id="register">
+            <div class="register-container">
+                <div class="singin-image">
+                    <div class="signin-image">
+                        <figure><img src="photo.jpg" alt="sing up image"></figure>
+                        <a href="#" class="signup-image-link">Create an account</a>
+                        </div>
+                </div>
+                <div class="singin-form">
+                    <h2 class="form-title">Sign up</h2>
+                    <form name="myForm" action="form.php" method="post">
+                        <div class="inputBox">
+                            <label for="your_name"><i class="zmdi zmdi-account material-icons-name"></i></label>
+                            <input name="fname" type="text" id="name" placeholder="Full name">
+                        </div>
+                        <div class="inputBox"></div>
+                            <label for="your_pass"><i class="zmdi zmdi-lock"></i></label>
+                            <input type="password" name="your_pass" id="your_pass" placeholder="Password">
+                            <div class="inputBox">
+                                <input type="checkbox" name="remember-me" id="remember-me" class="agree-term">
+                                <label for="remember-me" class="label-agree-term"><span><span></span></span>Remember me</label>
+                                <div class="inputBox">
+                                <input type="submit" name="signin" id="signin" class="btn" value="Log in">
+                            </div>
+                            </div>
+                            <div class="social">
+                                <p>Or login with</p>
+                                <a href="#"><i class="fa fa-instagram fa-3x"></i></a>
+                                <a href="#"><i class="fa fa-facebook fa-3x"></i></a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+           </section>  
+    </main>
+</body>
+</html>
