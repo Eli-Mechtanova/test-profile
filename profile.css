@@ -229,3 +229,34 @@ ul{
     padding: 0;
     color: #b0adad;
 }
+
+
+/* Making Responsive */
+
+@media (max-width:980px){
+    .conteiner{
+        width: 100%;
+    }
+    
+    .cards{
+        width: 100%;
+    }
+  }
+  
+  @media (max-width: 768px){
+      .cards{
+          display: block;
+        }
+    .card{
+        width: 100%;
+    }
+  }
+  
+  @media (max-width:576px){
+      .cards{
+          display: block;
+        }
+    .card{
+        width: 100%;
+    }
+  }
