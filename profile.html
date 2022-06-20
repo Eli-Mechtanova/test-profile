@@ -11,9 +11,27 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
 </head>
 <body>
+
+    <div class="header-conteiner">
+        <a class="logo" href="https://www.swimcloud.com/">
+            <img class="swimcloud-logo" src="/swimcloud-logos/Logo.png" alt="Swimcloud logo" width="100px">
+        </a>
+                <div class="search-wrap">
+                    <input placeholder="Search" class="search-box" />
+                    <span class="material-symbols-outlined  icon-search">search</span>
+                </div>
+
+        <div class="header-end">
+            <nav class="end">
+                <a class="end-item" href="/login">LOGIN</a>
+                <a class="end-item" href="/register">REGISTER</a>
+            </nav>
+        </div>
+    </div>
     <div class="conteiner">
         <div class="header">
             <div class="header-cover">
@@ -25,7 +43,7 @@
             <div>
                 <div class="NI">
                     <h1 class="name">Annabel Piel</h1>
-                    <span class="material-symbols-outlined">verified</span>
+                    <span class="material-symbols-outlined icon-varifed">verified</span>
                 </div>
                 <ul class="list">
                     <li class="point">Danville, CA</li>   
@@ -97,60 +115,84 @@
                           </blockquote>
             </div>
         </div>
+
+        <div class="card">
+                <div class="card-header">
+                    <h3 class="card-title">Teams</h3>
+                </div>
+            <div class="card-body">
+                <div class="teams">
+                <div class="list-body">
+                    <img  class="logo" src="https://s3.amazonaws.com/cstest/mb/2019/06/72f72d94-9061-44.jpeg.68x68_q85.jpg" width="45px" height="45px">
+                    <div>
+                        <a class="value" href="/team/10000195">Orinda Aquatics</a>
+                        <p class="city">Moraga, CA</p>
+                    </div>
+                </div>
+
+                <div class="list-body">
+                    <img  class="logo" src="https://swimcloud.com/media/img/icon-fa-institution.png" width="45px" height="45px">
+                    <div>
+                        <a class="value" href="/team/1032">The Athennian School</a>
+                        <p class="city">Danville, CA</p>
+                    </div>
+                </div>
+
+                <div class="list-body">
+                    <img  class="logo" src="https://s3.amazonaws.com/cstest/mb/2020/05/ef07fc90-2724-40.png.68x68_q85.png" width="45px" height="45px">
+                    <div>
+                        <a class="value" href="/team/8027">Scottsdale Aquatic Club</a>
+                        <p class="city">Scottsdale, AZ</p>
+                    </div>
+                </div>
+
+                <div class="list-body">
+                    <img  class="logo" src="https://swimcloud.com/media/img/icon-fa-institution.png" width="45px" height="45px">
+                    <div>
+                        <a class="value" href="/team/1032">Diablo Aquatics</a>
+                        <p class="city">Danville, CA</p>
+                    </div>
+                </div>
+
+                <div class="list-body">
+                    <img  class="logo" src="https://s3.amazonaws.com/cstest/mb/2019/06/d7a98c22-f34e-4c.jpeg.68x68_q85.jpg" width="45px" height="45px">
+                    <div>
+                        <a class="value" href="/team/8287">Walnut Creek Aquabears</a>
+                        <p class="city">Walnut Creek, CA</p>
+                    </div>
+                </div>
+
+                <div class="list-body">
+                    <img  class="logo" src="https://s3.amazonaws.com/cstest/teams/252/georgetown-university-logo.jpg.68x68_q85.jpg" width="45px" height="45px">
+                    <div>
+                        <a class="value" href="/team/252">Georgetown University</a>
+                        <p class="city">Washington, DC</p>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+
         <div class="card">
             <div class="card-header">
-            <h3 class="card-title">Teams</h3>
-        </div>
-        <div class="card-body">
-            <div class="list-body">
-                <img  class="logo" src="https://s3.amazonaws.com/cstest/mb/2019/06/72f72d94-9061-44.jpeg.68x68_q85.jpg" width="45px" height="45px">
-                <div>
-                    <a class="value" href="/team/10000195">Orinda Aquatics</a>
-                    <p class="city">Moraga, CA</p>
-                </div>
-           </div>
-
-           <div class="list-body">
-                <img  class="logo" src="https://swimcloud.com/media/img/icon-fa-institution.png" width="45px" height="45px">
-                <div>
-                    <a class="value" href="/team/1032">The Athennian School</a>
-                    <p class="city">Danville, CA</p>
-                </div>
+                <h3 class="card-title">
+                    Friends
+                    <button class="btn"> Add new Friends</button>
+                </h3>
+            </div>
+            <div class="card-body">
+                <div class="images">
+                    <img  class="avatar" src="https://i.pravatar.cc/150?img=3"> 
+                    <img  class="avatar" src="https://i.pravatar.cc/150?img=1"> 
+                    <img  class="avatar" src="https://i.pravatar.cc/150?img=5"> 
+                    <img  class="avatar" src="https://i.pravatar.cc/150?img=7"> 
+                    <img  class="avatar" src="https://i.pravatar.cc/150?img=8"> 
+                    <img  class="avatar" src="https://i.pravatar.cc/150?img=9"> 
+                    <img  class="avatar" src="https://i.pravatar.cc/150?img=10">
+                    <img  class="avatar" src="https://i.pravatar.cc/150?img=13">
+               </div>
             </div>
 
-            <div class="list-body">
-                <img  class="logo" src="https://s3.amazonaws.com/cstest/mb/2020/05/ef07fc90-2724-40.png.68x68_q85.png" width="45px" height="45px">
-                <div>
-                    <a class="value" href="/team/8027">Scottsdale Aquatic Club</a>
-                    <p class="city">Scottsdale, AZ</p>
-                </div>
-            </div>
-
-            <div class="list-body">
-                <img  class="logo" src="https://swimcloud.com/media/img/icon-fa-institution.png" width="45px" height="45px">
-                <div>
-                    <a class="value" href="/team/1032">Diablo Aquatics</a>
-                    <p class="city">Danville, CA</p>
-                </div>
-            </div>
-
-            <div class="list-body">
-                <img  class="logo" src="https://s3.amazonaws.com/cstest/mb/2019/06/d7a98c22-f34e-4c.jpeg.68x68_q85.jpg" width="45px" height="45px">
-                <div>
-                    <a class="value" href="/team/8287">Walnut Creek Aquabears</a>
-                    <p class="city">Walnut Creek, CA</p>
-                </div>
-            </div>
-
-            <div class="list-body">
-                <img  class="logo" src="https://s3.amazonaws.com/cstest/teams/252/georgetown-university-logo.jpg.68x68_q85.jpg" width="45px" height="45px">
-                <div>
-                    <a class="value" href="/team/252">Georgetown University</a>
-                    <p class="city">Washington, DC</p>
-                </div>
-            </div>
-            
-        </div>
         </div>
     </div>
 </body>
