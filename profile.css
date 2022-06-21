@@ -23,7 +23,6 @@ a{
     background-color: #fff;
     box-shadow: var(--main-box-shadow-color);
     margin: 0;
-    gap:20px;
     margin-bottom: 30px;
     padding: 0;
     width: 100%;
@@ -75,13 +74,13 @@ a{
     gap: 10px;
 }
 
-.end-item{
-    font-size: 14px;
-    line-height: 30px;  
-    color: var(--main-color);
+.log-avatar{
+    border-radius: 100%;
+    margin-left: 40px;
     margin-right: 10px;
-    position: relative;
-    align-items: center;
+    width: 40px;
+    height: 40px;
+    display: block;
 }
 
 
@@ -396,5 +395,10 @@ ul{
 
     .header{
         border-radius: 0;
+    }
+
+    .log-avatar{
+        width: 35px;
+        height: 35px;
     }
   }
