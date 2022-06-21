@@ -10,6 +10,7 @@ body{
 :root{
     --main-color : #b0adad;
     --main-box-shadow-color:  0 2px 2px 0 rgb(0 0 0 / 14%), 0 3px 1px -2px rgb(0 0 0 / 20%), 0 1px 5px 0 rgb(0 0 0 / 12%);
+    --main-border-color:#1e88e5;
 }
 
 a{ 
@@ -28,12 +29,13 @@ a{
     width: 100%;
     height: 60px;
     position:sticky;
+    z-index: 10;
     top: 0;
 }
 
 .swimcloud-logo{
-    margin-left: 20px;
-    margin-top: 40px;
+    align-items: center;
+    margin-left: 10px;
 
 }
 .search-wrap{
@@ -55,6 +57,9 @@ a{
     color: #000;
 }
 
+.search-box:focus{
+    background-color: #fff;
+}
 
 .icon-search{
     color: #444;
@@ -117,7 +122,7 @@ a{
     background-color: #fff;
 }
 
-.header .header-content{
+.header .header-cover{
     display: flex;
     flex-direction: column;
     flex: 1 1 0%;
@@ -143,10 +148,10 @@ a{
 }
 
 .icon-varifed{
-    color: #1e88e5;
+    color: var(--main-border-color);
     font-size: .6em;
     line-height: normal;
-    margin: 0 auto;
+    margin: 0;
 }
 
 .point::after{
@@ -197,7 +202,7 @@ a{
 
 .nav .active::after{
 content:"";
-border: 2px solid #1e88e5;
+border: 2px solid var(--main-border-color);
 position: absolute;
 width: 100%;
 bottom: -6px;
@@ -212,6 +217,10 @@ right: 0;
     align-items:flex-start;
 }
 
+.row{
+    display: grid;
+    grid-gap: 10px;
+}
 .card{
     background-color: #fff;
     box-shadow: var(--main-box-shadow-color);
@@ -223,11 +232,13 @@ right: 0;
 .card-header{
     border-bottom: 1px solid #e8e0e0;
     padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .card-title{
    margin: 0;
-   gap: 40px;
 }
 
 .card-body{
@@ -240,15 +251,23 @@ right: 0;
     border-radius: 6px;
     font-size: 14px;
     background: transparent;
-    border-color: #2980b9;
-    color: #2980b9;
-    margin-left: 300px;
+    border-color: var(--main-border-color);
+    color: var(--main-border-color);
+    padding: 8px 10px;
 
 }
 
 .btn:hover{
     box-shadow: 0px 1px 3px 3px rgb(243, 215, 168);
 }
+
+.friend-name{
+    margin: 0;
+    color: #626f76;
+    font-weight:normal;
+    text-align: center;
+}
+
 .images{
     display: flex;
     flex-wrap: wrap;
@@ -353,5 +372,29 @@ ul{
   @media (max-width: 658px){
     .end-item{
     display: none;
+    }
+
+    .img{
+        border-radius: 100%;
+        border: 3px solid white;
+        top: -50px;
+        position: absolute;
+
+    }
+
+    .header-body{
+        padding: 40px;
+        position: relative;
+        display: block;
+        gap: 20px;
+        align-items: stretch;
+    }
+
+    .header-conteiner{
+        margin: 0;
+    }
+
+    .header{
+        border-radius: 0;
     }
   }
