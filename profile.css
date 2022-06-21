@@ -361,6 +361,20 @@ ul{
     color: var(--main-color);
 }
 
+.footer{
+    position: relative;
+}
+
+.backgound{
+    display: block;
+    width: 100%;
+    opacity: .6;
+    max-height: 400px;
+    bottom: -100px;
+    z-index: -3;
+    position: absolute;
+}
+
 /* Making Responsive */
 
   @media (max-width: 768px){
