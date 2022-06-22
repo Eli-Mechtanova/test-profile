@@ -73,12 +73,59 @@
                 <h3 class="card-title">Settings</h3>
             </div>
             <div class="card-body">
-                <form method="post">
+                <form method="post" >
                         <label for="name">Your name</label>
                         <br>
-                        <input name="name" type="text" id="name" placeholder="Full name" value="Annabel Piel">
+                        <input name="name" type="text" id="name" value="Annabel Piel" required>
+                        <br>
+                        <label for="email">Email:</label>
+                        <br>
+                        <input type="email" name="email" id="email" value="annabel1580@abv.bg" disabled>
+                        <br>
+                        <label for="bio">Bio</label>
+                        <br>
+                        <textarea id="bio" name="bio" rows="5" cols="30" placeholder="Tell us a little about you" maxlength="300"></textarea>
+                        <br>
+                        <label for="language">Language</label>
+                        <br>
+                        <select name="language" id="language">
+                            <option value="bulgarian">Bulgarian</option>
+                            <option value="english" selected>English</option>
+                            <option value="spanish">Spanish</option>
+                            <option value="german" disabled>German</option>
+                        </select>
+                        <br>
+                        <label >Gender</label>
+                        <br>
+                        <input type="radio" id="female" name="gender" value="Female" checked="checked">
+                        <label for="female">Female</label>
+                        <br>
+                        <input type="radio" id="male" name="gender">
+                        <label for="male">Male</label>
+                        <br>
+                        <input type="radio" id="other" name="gender">
+                        <label for="other">Other</label>
+                        <br>
+                        <label for="phone">Phone</label>
+                        <br>
+                        <input type="tel" id="phone" name="phone" placeholder="Your phone number" autocomplete="off">
+                        <br>
+                        <label >Send notification via:</label>
+                        <br>
+                        <input type="checkbox" id="web">
+                        <label for="web">Web</label>
+                        <br>
+                        <input type="checkbox" id="mobile">
+                        <label for="mobile">Mobile</label>
+                        <br>
+                        <input type="checkbox" id="desktop">
+                        <label for="desktop">Desktop app</label>
+                        <br>
+                        <label for="birthday">Date of birth:</label>
+                        <br>
+                        <input type="date" id="birthday" name="birthday" min="2005-01-01" max="2010-12-31">
+                        <br><br>
                         <button type="submit">Save</button>
-                      
                 </form>
             </div>
         </div>
