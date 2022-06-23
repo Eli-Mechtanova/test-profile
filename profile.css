@@ -1,5 +1,5 @@
 body{
-    background-color: #f5f5f5;
+    background-color: #f5f5f5 !important; 
 }
 
 :root{
@@ -143,9 +143,17 @@ a{
 
 .icon-varifed{
     color: var(--main-border-color);
-    font-size: .6em;
+    font-size: 6em;
     line-height: normal;
     margin: 0;
+}
+
+.icon-favorite{
+    color: var(--main-border-color);
+    font-size: 16px !important;
+    line-height: normal;
+    margin: 0; 
+    margin-top: 2px;
 }
 
 .point::after{
@@ -256,8 +264,10 @@ right: 0;
     box-shadow: 0px 1px 3px 3px rgb(243, 215, 168);
 }
 
-.friend-name{
+.friends-name{
     margin: 0;
+    margin-top: 10px;
+    font-size: 16px;
     color: #626f76;
     font-weight:normal;
     text-align: center;
