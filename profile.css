@@ -240,6 +240,11 @@ right: 0;
     padding: 0;
 
 }
+
+.card-alt{
+    width: 380px;
+    overflow: hidden;
+}
 .card-header{
     border-bottom: 1px solid #e8e0e0;
     padding: 20px;
@@ -376,6 +381,13 @@ ul{
     color: var(--main-color);
 }
 
+.settings-photo{
+    position: relative;
+    left: 1em;
+    /* top: 20em; */
+    bottom: -47em;
+}
+
 .footer{
     position: relative;
 }
@@ -400,6 +412,10 @@ height: calc(100vh - 60px);
 
 }
 
+.width{
+    width: 380px;
+}
+
 .login-header{
     display: flex;
     justify-content: center;
@@ -419,6 +435,12 @@ height: calc(100vh - 60px);
     margin-bottom: 30px;
     font-size: 20px;
 }
+
+.photo{
+    margin: 0 auto;
+    display: block;
+}
+
 
 /* Making Responsive */
 
