@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log in</title>
+    <link rel="stylesheet" href="profile.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" /> 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+
+</head>
+<body>
+    <div class="header-conteiner">
+        <a class="logo" href="https://www.swimcloud.com/">
+            <img class="swimcloud-logo" src="/swimcloud-logos/Logo.png" alt="Swimcloud logo" width="100px">
+        </a>
+                <div class="search-wrap">
+                    <input placeholder="Search" class="search-box" />
+                    <span class="material-symbols-outlined  icon-search">search</span>
+                </div>
+
+        <div class="header-end">
+            <nav class="nav">
+              
+                <a class="end-item " href="login.html">LOGIN</a>
+                
+                <a class="end-item" href="register-profile.html">REGISTER</a>
+
+            </nav>
+
+        </div>
+    </div>
+
+    <div class="form">
+        <div class="card">
+            <div class="card-body">
+                <h3 class="login-header">
+                    Log in
+                </h3>
+                <form method="post">
+
+                    <div class="form-group">
+                        <label for="exampleInputEmail2">Email</label>
+                        <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Enter your e-mail" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Password</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" required>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="checkbox" name="remember-me" id="remember-me" class="agree-term">
+                        <label for="remember-me" class="label-agree-term"><span><span></span></span>Remember me</label>
+                    </div>
+
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-info">LOG IN</button>
+                    </div>
+                        <p class="question">Don't have an account? 
+                            <a href="register-profile.html">Register</a>
+                        </p>
+                    
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
