@@ -113,8 +113,42 @@ a{
     overflow: hidden;
 }
 
-.img{
+.avatar-img{
     border-radius: 100%;
+}
+
+.spin{
+        animation: rotation 6s infinite linear;
+      }
+      
+@keyframes rotation {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(360deg);
+        }
+}
+
+.spin-btn{
+    position: fixed;
+    z-index: 10px;
+    bottom: 30px;
+    right: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    border: none;
+    box-shadow:  var(--main-box-shadow-color);
+    background-color: var(--main-border-color);
+    width: 60px;
+    height: 60px;
+}
+
+.spin-btn span{
+    font-size: 32px;
+    color: #fff;
 }
 
 .header{
@@ -389,6 +423,8 @@ ul{
 }
 
 .footer{
+    margin: 0;
+    padding: 0;
     position: relative;
 }
 
@@ -436,7 +472,7 @@ height: calc(100vh - 60px);
     font-size: 20px;
 }
 
-.photo{
+.photo-forms{
     margin: 0 auto;
     display: block;
 }
