@@ -441,6 +441,31 @@ ul{
     transition: 0.5s;
 }
 
+/*friends*/
+
+.friends{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.friends-field{
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+
+.friend{
+    border-radius: 100%;
+    width: 100px;
+}
+
+.fname{
+    color: #626f76;
+    font-size: 18px;
+}
+
 .footer{
     margin: 0;
     padding: 0;
@@ -456,6 +481,8 @@ ul{
     z-index: -3;
     position: absolute;
 }
+
+/*login-register*/
 
 .form{
 display: flex;
