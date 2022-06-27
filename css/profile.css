@@ -255,10 +255,13 @@ right: 0;
 }
 
 .cards{
+    margin-top: 20px;
+}
+
+.position{
     display: grid;
     grid-gap: 10px;
     grid-template-columns: 1fr 1fr;
-    margin-top: 20px;
     align-items:flex-start;
 }
 
@@ -266,6 +269,13 @@ right: 0;
     display: grid;
     grid-gap: 10px;
 }
+
+.full-width{
+    display: block;
+    margin-top: 10px;
+    width: 100%;
+}
+
 .card{
     background-color: #fff;
     box-shadow: var(--main-box-shadow-color);
@@ -415,11 +425,20 @@ ul{
     color: var(--main-color);
 }
 
-.settings-photo{
-    position: relative;
-    left: 1em;
-    /* top: 20em; */
-    bottom: -47em;
+.profile-photos{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    
+}
+
+.anabel-photos{
+    height: 275px;
+}
+
+.anabel-photos:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
 }
 
 .footer{
