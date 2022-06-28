@@ -322,26 +322,40 @@ right: 0;
     box-shadow: 0px 1px 3px 3px rgb(243, 215, 168);
 }
 
-.friends-name{
-    margin: 0;
-    margin-top: 10px;
-    font-size: 16px;
-    color: #626f76;
-    font-weight:normal;
-    text-align: center;
-}
-
-.images{
+.avatars{
     display: flex;
-    flex-wrap: wrap;
-    gap: 25px;
-
+    align-items: center;
 }
+
+.nums{
+    font-size: 18px;
+    margin-left: 10px;
+}
+
 .avatar{
+    position: relative;
+    border: 5px solid #fff;
     border-radius: 100%;
     margin: 0;
     padding: 0;
+    margin-left: -20px;
     width: 60px;
+}
+
+.avatar:nth-of-type(2){
+    z-index: 2; 
+}
+
+.avatar:nth-of-type(3){
+    z-index: 3; 
+}
+
+.avatar:nth-of-type(4){
+    z-index: 4; 
+}
+
+.avatar:nth-of-type(5){
+    z-index: 5; 
 }
 
 .avatar:hover{
@@ -452,13 +466,13 @@ ul{
 
 .friends-field{
     display: flex;
-    gap: 50px;
+    gap: 20px;
     align-items: center;
 }
 
 .friend{
     border-radius: 100%;
-    width: 100px;
+    width: 90px;
 }
 
 .fname{
