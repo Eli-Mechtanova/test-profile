@@ -555,6 +555,13 @@ height: calc(100vh - 60px);
 
     }
 
+.position{
+    position: relative;
+    display: block;
+    gap: 20px;
+    align-items: stretch;
+}
+
     .header-body{
         padding: 40px;
         position: relative;
