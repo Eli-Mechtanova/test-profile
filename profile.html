@@ -5,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Profile</title>
-    <link rel="stylesheet" href="/css/profile.css">
+    <link rel="stylesheet/less" type="text/css" href="less/main.less" />
+    <script src="https://cdn.jsdelivr.net/npm/less"></script>
+    <!-- <link rel="stylesheet" href="/css/profile.css"> -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,44 +17,44 @@
 </head>
 <body>
 
-    <div class="header-conteiner">
+    <div class="header__conteiner">
         <a class="logo" href="profile.html">
-            <img class="swimcloud-logo" src="/swimcloud-logos/Logo.png" alt="Swimcloud logo" width="100px">
+            <img class="header__logo" src="/swimcloud-logos/Logo.png" alt="Swimcloud logo" width="100px">
         </a>
-                <div class="search-wrap">
-                    <input placeholder="Search" class="search-box" />
-                    <span class="material-symbols-outlined  icon-search">search</span>
+                <div class="header__search">
+                    <input placeholder="Search" class="header__box" />
+                    <span class="material-symbols-outlined  header__icon-search">search</span>
                 </div>
 
         <div class="header-end">
             <nav class="end">
             <!-- <img  class="log-avatar" src="https://s3.amazonaws.com/cstest/mb/2022/06/40c87fae-ba33-4b0b-a93c-122d2d38ea16.jpg.88x88_q85.jpg" alt="Annabel M Piel (Annabel) profile image" width="88" height="88"> -->
-                <a class="end-item" href="login.html">LOGIN</a>
-                <a class="end-item" href="register.html">REGISTER</a> 
+                <a class="header__end-item" href="login.html">LOGIN</a>
+                <a class="header__end-item" href="register.html">REGISTER</a> 
             </nav>
         </div>
     </div>
     <div class="conteiner">
-        <div class="header">
-            <div class="header-cover">
+        <div class="profile">
+            <div class="profile__cover">
         </div>
 
-        <div class="header-body">
-            <img class="avatar-img js" src="https://s3.amazonaws.com/cstest/mb/2022/06/40c87fae-ba33-4b0b-a93c-122d2d38ea16.jpg.88x88_q85.jpg" alt="Annabel M Piel (Annabel) profile image" width="88" height="88">
+        <div class="profile__body">
+            <img class="profile__avatar-img js" src="https://s3.amazonaws.com/cstest/mb/2022/06/40c87fae-ba33-4b0b-a93c-122d2d38ea16.jpg.88x88_q85.jpg" alt="Annabel M Piel (Annabel) profile image" width="88" height="88">
                 
-            <div class="info">
-                <div class="NI">
-                    <h1 class="name">Annabel Piel</h1>
-                    <span class="material-symbols-outlined icon-varifed">verified</span>
+            <div class="profiel__info">
+                <div class="profile__avatar-info">
+                    <h1 class="profile__name">Annabel Piel</h1>
+                    <span class="material-symbols-outlined profile__icon-varifed">verified</span>
                 </div>
-                <ul class="list">
-                    <li class="point">Danville, CA</li>   
-                    <li class="point">
+                <ul class="profile__list">
+                    <li class="profile__point">Danville, CA</li>   
+                    <li class="profile__point">
                         <a href="#">Orinda Aquatics</a>
                     </li>
                     <li>
                         <a href="https://www.instagram.com/_mechtanova02_/" target="_blank" > 
-                            <span class="material-symbols-outlined icon-favorite">
+                            <span class="material-symbols-outlined profile__icon-favorite">
                                 favorite
                             </span>
                         </a>
@@ -61,26 +63,26 @@
             </div>
         </div>
 
-            <nav class="nav">
+            <nav class="profile__nav">
               
-                <a class="nav-item active" href="profile.html">Home</a>
+                <a class="profile__nav-item active" href="profile.html">Home</a>
               
-                <a class="nav-item" href="/swimmer/1353937/meets/">Meets</a>
+                <a class="profile__nav-item" href="/swimmer/1353937/meets/">Meets</a>
               
-                <a class="nav-item" href="/swimmer/1353937/rankings/">Rankings</a>
+                <a class="profile__nav-item" href="/swimmer/1353937/rankings/">Rankings</a>
 
-                <a class="nav-item" href="friends.html">Friends</a>
+                <a class="profile__nav-item" href="friends.html">Friends</a>
 
-                <a class="nav-item " href="settings.html">Settings</a>
+                <a class="profile__nav-item " href="settings.html">Settings</a>
               
             </nav>
     </div>
 
     <div class="cards">
         
-        <div class="position">
+        <div class="cards__position">
 
-            <div class="under">
+            <div class="cards__under">
                 <div class="card">
                 <div class="card-header">
                     <h3 class="card-title">Recruiting</h3>
@@ -88,42 +90,42 @@
                 <div class="card-body">
                         <ul class="stats">
                         
-                            <li class="stats-item">
-                                <p class="stats-label" title="Power index">Power index</p>
-                                <a class="stats-value" href="https://www.swimcloud.com/swimmer/1353937/powerindex"
+                            <li class="stats__item">
+                                <p class="stats__label" title="Power index">Power index</p>
+                                <a class="stats__value" href="https://www.swimcloud.com/swimmer/1353937/powerindex"
                                 target="_blank"> 22.32</a>
                             </li>
                         
                         
-                            <li class="stats-item">
-                                <p class="stats-label" title="California rank">California rank</p>
-                                <a class="stats-value" href="https://www.swimcloud.com/recruiting/rankings/2023/F/CA/?id=1353937" 
+                            <li class="stats__item">
+                                <p class="stats__label" title="California rank">California rank</p>
+                                <a class="stats__value" href="https://www.swimcloud.com/recruiting/rankings/2023/F/CA/?id=1353937" 
                                 target="_blank"> 46th</a>
                             </li>
                         
                         
-                            <li class="stats-item">
-                                <p class="stats-label">2023 rank</p>
-                                <a class="stats-value" href="https://www.swimcloud.com/recruiting/rankings/2023/F/?id=1353937" 
+                            <li class="stats__item">
+                                <p class="stats__label">2023 rank</p>
+                                <a class="stats__value" href="https://www.swimcloud.com/recruiting/rankings/2023/F/?id=1353937" 
                                 target="_blank">516th</a>
                             </li>
                         
                         
-                            <li class="stats-item">
-                                <p class="stats-label">Class</p>
-                                <p class="stats-value">2023</p>
+                            <li class="stats__item">
+                                <p class="stats__label">Class</p>
+                                <p class="stats__value">2023</p>
                             </li>
                         
                         </ul>
                       
-                        <div class="body">
-                                <img  class="photo" src="https://s3.amazonaws.com/cstest/teams/252/georgetown-university-logo.jpg.68x68_q85.jpg" width="40px">
+                        <div class="stats__body">
+                                <img  class="stats__photo" src="https://s3.amazonaws.com/cstest/teams/252/georgetown-university-logo.jpg.68x68_q85.jpg" width="40px">
                                 <div>
-                                    <p class="title">Commited to</p>
-                                    <a class="link" href="/team/252">Georgetown University</a>
+                                    <p class="stats__title">Commited to</p>
+                                    <a class="stats__link" href="/team/252">Georgetown University</a>
                                 </div>
                         </div>
-                            <blockquote class="quote">
+                            <blockquote class="stats__quote">
                                 <p class="quote-text">HOYA SAXA!!!</p>
                             </blockquote>
                 </div>
@@ -143,7 +145,7 @@
                                 <img  class="avatar js" src="https://i.pravatar.cc/150?img=5">
                                 <img  class="avatar js" src="https://i.pravatar.cc/150?img=7">
                                 <img  class="avatar js" src="https://i.pravatar.cc/150?img=8">
-                                <div class="nums">+3</div>
+                                <div class="avatar__num">+3</div>
                         </div>
                     </div>
                 </div>
@@ -156,51 +158,51 @@
                 </div>
             <div class="card-body">
                 <div class="teams">
-                <div class="list-body">
-                    <img  class="logo" src="https://s3.amazonaws.com/cstest/mb/2019/06/72f72d94-9061-44.jpeg.68x68_q85.jpg" width="45px" height="45px">
+                <div class="team__body">
+                    <img  class="team__logo" src="https://s3.amazonaws.com/cstest/mb/2019/06/72f72d94-9061-44.jpeg.68x68_q85.jpg" width="45px" height="45px">
                     <div>
-                        <a class="value" href="/team/10000195">Orinda Aquatics</a>
-                        <p class="city">Moraga, CA</p>
+                        <a class="team__value" href="/team/10000195">Orinda Aquatics</a>
+                        <p class="team__city">Moraga, CA</p>
                     </div>
                 </div>
 
-                <div class="list-body">
-                    <img  class="logo" src="https://swimcloud.com/media/img/icon-fa-institution.png" width="45px" height="45px">
+                <div class="team__body">
+                    <img  class="team__logo" src="https://swimcloud.com/media/img/icon-fa-institution.png" width="45px" height="45px">
                     <div>
-                        <a class="value" href="/team/1032">The Athennian School</a>
-                        <p class="city">Danville, CA</p>
+                        <a class="team__value" href="/team/1032">The Athennian School</a>
+                        <p class="team__city">Danville, CA</p>
                     </div>
                 </div>
 
-                <div class="list-body">
-                    <img  class="logo" src="https://s3.amazonaws.com/cstest/mb/2020/05/ef07fc90-2724-40.png.68x68_q85.png" width="45px" height="45px">
+                <div class="team__body">
+                    <img  class="team__logo" src="https://s3.amazonaws.com/cstest/mb/2020/05/ef07fc90-2724-40.png.68x68_q85.png" width="45px" height="45px">
                     <div>
-                        <a class="value" href="/team/8027">Scottsdale Aquatic Club</a>
-                        <p class="city">Scottsdale, AZ</p>
+                        <a class="team__value" href="/team/8027">Scottsdale Aquatic Club</a>
+                        <p class="team__city">Scottsdale, AZ</p>
                     </div>
                 </div>
 
-                <div class="list-body">
-                    <img  class="logo" src="https://swimcloud.com/media/img/icon-fa-institution.png" width="45px" height="45px">
+                <div class="team__body">
+                    <img  class="team__logo" src="https://swimcloud.com/media/img/icon-fa-institution.png" width="45px" height="45px">
                     <div>
-                        <a class="value" href="/team/1032">Diablo Aquatics</a>
-                        <p class="city">Danville, CA</p>
+                        <a class="team__value" href="/team/1032">Diablo Aquatics</a>
+                        <p class="team__city">Danville, CA</p>
                     </div>
                 </div>
 
-                <div class="list-body">
-                    <img  class="logo" src="https://s3.amazonaws.com/cstest/mb/2019/06/d7a98c22-f34e-4c.jpeg.68x68_q85.jpg" width="45px" height="45px">
+                <div class="team__body">
+                    <img  class="team__logo" src="https://s3.amazonaws.com/cstest/mb/2019/06/d7a98c22-f34e-4c.jpeg.68x68_q85.jpg" width="45px" height="45px">
                     <div>
-                        <a class="value" href="/team/8287">Walnut Creek Aquabears</a>
-                        <p class="city">Walnut Creek, CA</p>
+                        <a class="team__value" href="/team/8287">Walnut Creek Aquabears</a>
+                        <p class="team__city">Walnut Creek, CA</p>
                     </div>
                 </div>
 
-                <div class="list-body">
-                    <img  class="logo" src="https://s3.amazonaws.com/cstest/teams/252/georgetown-university-logo.jpg.68x68_q85.jpg" width="45px" height="45px">
+                <div class="team__body">
+                    <img  class="team__logo" src="https://s3.amazonaws.com/cstest/teams/252/georgetown-university-logo.jpg.68x68_q85.jpg" width="45px" height="45px">
                     <div>
-                        <a class="value" href="/team/252">Georgetown University</a>
-                        <p class="city">Washington, DC</p>
+                        <a class="team__value" href="/team/252">Georgetown University</a>
+                        <p class="team__city">Washington, DC</p>
                     </div>
                 </div>
             </div>
@@ -209,17 +211,17 @@
 
         </div>
 
-        <div class="full-width">
+        <div class="cards__full-width">
             <div class="card">
                 <div class="card-header">
                     <h3 class="card-title">Photos</h3>
                 </div>
                 <div class="card-body">
-                    <div class="profile-photos">
-                        <img class="anabel-photos" src="/images/anabel.jpeg">
-                        <img class="anabel-photos" src="/images/anabel2.jpeg">
-                        <img class="anabel-photos" src="/images/anabel3.jpeg">
-                        <img class="anabel-photos" src="/images/anabel4.jpeg">
+                    <div class="photo">
+                        <img class="anabel-photo" src="/images/anabel.jpeg">
+                        <img class="anabel-photo" src="/images/anabel2.jpeg">
+                        <img class="anabel-photo" src="/images/anabel3.jpeg">
+                        <img class="anabel-photo" src="/images/anabel4.jpeg">
                     </div>
                 </div>
             </div>
@@ -228,8 +230,6 @@
     </div>
 
 </div>
-
-    </div>
     <footer class="footer">
         <img class="backgound" src="/images/backgrond.png">
     </footer>
