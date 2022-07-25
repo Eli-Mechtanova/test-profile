@@ -1,0 +1,165 @@
+.cards{
+    margin-top: 20px;
+}
+.cards__position{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr;
+    align-items:flex-start;
+}
+.cards__under{
+    display: grid;
+    grid-gap: 10px;
+}
+.cards__full-width{
+    display: block;
+    margin-top: 10px;
+    width: 100%;
+}
+.card{
+    background-color: #fff;
+    box-shadow: @main-box-shadow-color;
+    border-radius: 8px;
+    margin: 0;
+    padding: 0;
+
+}
+.card-header{
+    border-bottom: 1px solid #e8e0e0;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.card-title{
+   margin: 0;
+   font-size: 20px;
+}
+.card-body{
+    padding: 20px;
+}
+ul{
+    list-style: none;
+}
+.stats{
+    display: flex;
+    gap: 10px;
+    padding: 0;
+    margin: 0;
+}
+.stats__item{
+    flex: 1;
+}
+.stats__item{
+    &:not(:last-child){
+    border-right: 1px solid #e8e0e0;
+    padding-right: 10px;
+}
+}
+.stats__label{
+    margin: 0;
+    color: @main-color;
+}
+.stats__value{
+    margin: 0;
+}
+.stats__body{
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+.stats__photo{
+    padding: 20px;
+    padding-left: 0;
+}
+.stats__title{
+    margin-bottom: 0;
+    padding: 0;
+}
+.stats__quote{
+    margin: 0;
+    padding: 0;
+    padding-left: 20px;
+    border-left: 3px solid #e8e0e0;
+}
+.avatars{
+    display: flex;
+    align-items: center;
+}
+.avatar{
+    position: relative;
+    border: 5px solid #fff;
+    border-radius: 100%;
+    margin: 0;
+    padding: 0;
+    margin-left: -20px;
+    width: 60px;
+}
+.avatar{
+    &:nth-of-type(2){
+    z-index: 2; 
+}
+}
+.avatar{
+    &:nth-of-type(3){
+    z-index: 3; 
+}
+}
+.avatar{
+    &:nth-of-type(4){
+    z-index: 4; 
+}
+}
+.avatar{
+    &:nth-of-type(5){
+    z-index: 5; 
+}
+}
+.avatar{
+    &:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+}
+.avatar__num{
+    font-size: 18px;
+    margin-left: 10px;
+}
+.teams{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.team__body{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    gap: 20px;
+    align-items: center;
+}
+.team__logo{
+    &:last-child{
+    margin:0;
+    padding: 0;
+}
+}
+.team__city{
+    margin: 0;
+    padding: 0;
+    color: var@main-color;
+}
+.photo{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    
+}
+.anabel-photo{
+    height: 275px;
+}
+.anabel-photo{
+    &:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+}
