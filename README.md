@@ -1,6 +1,6 @@
 # Best project ever
 
-We add some new things: 
--less files and BEM construction in our work 
+Add some new things: 
+-less files and BEM construction 
 
 By Eli
