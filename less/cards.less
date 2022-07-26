@@ -50,12 +50,10 @@ ul{
 }
 .stats__item{
     flex: 1;
-}
-.stats__item{
     &:not(:last-child){
-    border-right: 1px solid #e8e0e0;
-    padding-right: 10px;
-}
+        border-right: 1px solid #e8e0e0;
+        padding-right: 10px;
+    }
 }
 .stats__label{
     margin: 0;
@@ -87,7 +85,7 @@ ul{
     display: flex;
     align-items: center;
 }
-.avatar{
+.avatars__item{
     position: relative;
     border: 5px solid #fff;
     border-radius: 100%;
@@ -95,34 +93,25 @@ ul{
     padding: 0;
     margin-left: -20px;
     width: 60px;
-}
-.avatar{
     &:nth-of-type(2){
-    z-index: 2; 
-}
-}
-.avatar{
+        z-index: 2; 
+    }
     &:nth-of-type(3){
-    z-index: 3; 
-}
-}
-.avatar{
+        z-index: 3; 
+    }
     &:nth-of-type(4){
-    z-index: 4; 
-}
-}
-.avatar{
+        z-index: 4; 
+    }
     &:nth-of-type(5){
-    z-index: 5; 
-}
-}
-.avatar{
+        z-index: 5; 
+    }
     &:hover{
-    transform: scale(1.1);
-    transition: 0.5s;
+        transform: scale(1.1);
+        transition: 0.5s;
+    }
+    
 }
-}
-.avatar__num{
+.avatars__num{
     font-size: 18px;
     margin-left: 10px;
 }
@@ -131,20 +120,20 @@ ul{
     flex-direction: column;
     gap: 20px;
 }
-.team__body{
+.teams__body{
     display: flex;
     margin: 0;
     padding: 0;
     gap: 20px;
     align-items: center;
 }
-.team__logo{
+.teams__logo{
     &:last-child{
     margin:0;
     padding: 0;
 }
 }
-.team__city{
+.teams__city{
     margin: 0;
     padding: 0;
     color: var@main-color;
